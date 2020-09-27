@@ -41,6 +41,6 @@ RUN echo 'export PATH=${ATHRILL_GCC}/bin:${HAKONIWA_HOME}/athrill-target-rh850f1
 RUN source /home/gitpod/.bashrc \
     && mkdir sample1
     && cd sample1
-    && cp $HAKONIWA_HOME/athrill-target-rh850f1x/params/rh850f1k/atk2-sc1/*.txt .
+    && cp ${HAKONIWA_HOME}/athrill-target-rh850f1x/params/rh850f1k/atk2-sc1/*.txt .
     && ../configure -T hsbrh850f1k_gcc -g ${HAKONIWA_HOME}/cfg
     && make
