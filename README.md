@@ -1,3 +1,4 @@
 # athrill-gitpod-sample
+Contains the Gitpod configuration to launch a Browser in Gitpod
 
-https://ae2d4720-c0fb-4dae-9195-743071d9fc19.ws-us02.gitpod.io/
+Launch this repo in Gitpod: https://gitpod.io/#https://github.com/tmori/athrill-gitpod-sample
