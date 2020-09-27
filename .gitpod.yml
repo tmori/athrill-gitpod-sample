@@ -10,3 +10,5 @@ ports:
 tasks:
   - init: bash ./make_sample.bash
     command: cd sample1
+    command: clear
+    command: athrill2 -c1 -i -d device_config.txt -m memory.txt atk2-sc1
