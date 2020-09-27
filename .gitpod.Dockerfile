@@ -37,3 +37,10 @@ ENV LD_LIBRARY_PATH="${ATHRILL_GCC}:${ATHRILL_GCC}/lib:${LD_LIBRARY_PATH}"
 USER gitpod
 
 RUN echo 'export PATH=${ATHRILL_GCC}/bin:${HAKONIWA_HOME}/athrill-target-rh850f1x/build_linux:$PATH' >>/home/gitpod/.bashrc
+
+RUN source /home/gitpod/.bashrc \
+    && mkdir sample1
+    && cd sample1
+    && cp $HAKONIWA_HOME/athrill-target-rh850f1x/params/rh850f1k/atk2-sc1/*.txt .
+    && ../configure -T hsbrh850f1k_gcc -g ${HAKONIWA_HOME}/cfg
+    && make
